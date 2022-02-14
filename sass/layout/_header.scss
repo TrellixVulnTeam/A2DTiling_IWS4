@@ -1,7 +1,9 @@
 .header {
+  font-family: 'JetBrains Mono', monospace;
   color: $color-white-2;
   //height:90vh;
-  height: 50rem;
+  height: 55rem;
+  //margin-top: 10rem;
   background-image: linear-gradient(to right bottom, rgba($color-white, 0.1), rgba($color-white, 0.3)), url(../img/header_test_4.jpg);
   //background-attachment: fixed;
   background-position: center;
@@ -10,7 +12,7 @@
   position: relative;
   width: 100% !important;
   background-size:cover;
-  padding-top: 3rem;
+  padding-top: 9rem;
   text-align: center;
   //@media(max-width: 1440px) {
   //    //height: 200rem;

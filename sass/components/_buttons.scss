@@ -21,4 +21,10 @@
     color: $color-primary !important;
     background-color: $color-white !important;
   }
+
+  &__border{
+    color: $color-primary !important;
+    background-color: transparent !important;
+    border: 2px solid $color-secondary !important;
+  }
 }
