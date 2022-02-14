@@ -8,10 +8,13 @@
     padding: 1rem 0 0.5rem 0;
     height: 50px;
     display: inline-block;
+    background-color: $color-primary;
+    padding:1rem;
   }
 
+
   &__list{
-    padding: 1.8rem 0 0 3rem;
+    padding: 1.8rem 2rem 0 5rem;
     vertical-align: top;
     display: inline-block;
     list-style: none;
@@ -24,7 +27,7 @@
 
   &__link{
     //color: $color-white;
-    color: $color-grey-dark-4;
+    color: $color-primary;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
@@ -34,9 +37,11 @@
   &__contact{
     &:link,
     &:visited{
-      color: $color-grey-dark-4;
+      margin: .7rem 2rem 0 0;
+      color: $color-primary;
       text-decoration: none;
       border-radius: 0.3rem;
+      vertical-align: top;
     }
     //padding: 0 0 0 0.8rem;
     padding: .5rem;
@@ -47,9 +52,16 @@
       background-color: $color-white-2;
     }
     &--icon{
+      border: 2px solid $color-primary;
+      width: 4.5rem;
+      height: 4.5rem;
+      text-align: center;
       display: inline-block;
-      width: 40px;
-      margin-bottom: .1rem;
+      font-size: 3.5rem !important;
+      margin-top: .1rem;
+      color: $color-secondary;
+      border-radius: 3px;
+      padding-top: .2rem;
     }
     &--text{
       margin-top: -.3rem;
@@ -57,7 +69,7 @@
       font-weight: 700;
       display: inline-block;
       &-number{
-        color: #eb5c24;
+        color: $color-secondary;
       }
     }
   }
