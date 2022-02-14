@@ -6,4 +6,87 @@
   &__text{
     font-size: 2.3rem;
   }
+
+  &__box{
+    background-color: $color-white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height: 60rem;
+    position: relative;
+
+    &--title{
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 2.5rem;
+      padding-bottom: 3rem;
+
+      &-white{
+        padding-bottom: 3rem;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 2.5rem;
+        color: $color-white;
+      }
+    }
+
+    &--details{
+      color:  $color-white;
+      display: block;
+      margin-bottom: 5rem;
+
+      &-icon{
+        display: inline-block;
+        font-size: 7rem !important;
+      }
+      &-text{
+        &:first-child{
+          margin-top: -2rem !important;
+        }
+        font-size: 2rem;
+        padding: 1.8rem;
+        vertical-align: top;
+        display: inline-block;
+      }
+    }
+
+    &--left{
+      padding: 4rem;
+      height: 100%;
+      display: inline-block;
+      width: 30%;
+      background-color: $color-secondary;
+    }
+    &--right{
+      vertical-align: top;
+      padding: 4rem;
+      height: 100%;
+      display: inline-block;
+      width: 69%;
+      background-color: $color-white;
+      margin-left: -4px !important;
+    }
+  }
+
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: $color-secondary;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: $color-primary;
 }

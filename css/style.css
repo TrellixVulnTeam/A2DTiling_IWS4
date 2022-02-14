@@ -131,7 +131,8 @@ body {
   width: 100%;
   z-index: 10000;
   position: fixed;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), white); }
+  background-image: linear-gradient(to right bottom, white, white);
+  border-bottom: 3px solid silver; }
   .navigation__logo {
     padding: 1rem 1rem 0.5rem 1rem;
     height: 50px;
@@ -207,7 +208,8 @@ body {
 .about {
   width: 100%;
   padding: 8rem 0 8rem 0;
-  background-color: #fdfdfd; }
+  background-color: #fdfdfd;
+  border-bottom: 6px solid #0a65b2; }
   .about__text {
     font-size: 2.3rem; }
   .about__photo {
@@ -236,22 +238,89 @@ body {
   background-color: #f7f7f7; }
   .contact__text {
     font-size: 2.3rem; }
+  .contact__box {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height: 60rem;
+    position: relative; }
+    .contact__box--title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 2.5rem;
+      padding-bottom: 3rem; }
+      .contact__box--title-white {
+        padding-bottom: 3rem;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 2.5rem;
+        color: #fff; }
+    .contact__box--details {
+      color: #fff;
+      display: block;
+      margin-bottom: 5rem; }
+      .contact__box--details-icon {
+        display: inline-block;
+        font-size: 7rem !important; }
+      .contact__box--details-text {
+        font-size: 2rem;
+        padding: 1.8rem;
+        vertical-align: top;
+        display: inline-block; }
+        .contact__box--details-text:first-child {
+          margin-top: -2rem !important; }
+    .contact__box--left {
+      padding: 4rem;
+      height: 100%;
+      display: inline-block;
+      width: 30%;
+      background-color: #0a65b2; }
+    .contact__box--right {
+      vertical-align: top;
+      padding: 4rem;
+      height: 100%;
+      display: inline-block;
+      width: 69%;
+      background-color: #fff;
+      margin-left: -4px !important; }
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0a65b2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background-color: #292929; }
 
 .portfolio {
   width: 100%;
   padding: 8rem 0 8rem 0;
-  background-color: #fdfdfd; }
+  background-color: #fdfdfd;
+  border-bottom: 6px solid #0a65b2; }
   .portfolio__text {
     font-size: 2.3rem; }
-  .portfolio_box {
+  .portfolio__box {
     width: 100%;
-    height: 100%;
-    background-color: orangered; }
+    height: 100%; }
+    .portfolio__box--img {
+      width: 100%; }
 
 .services {
   width: 100%;
   padding: 8rem 0 8rem 0;
-  background-color: #f7f7f7; }
+  background-color: #f4f4f4;
+  border-bottom: 6px solid #0a65b2; }
   .services__text {
     font-size: 2.3rem;
     padding-bottom: 3rem; }
