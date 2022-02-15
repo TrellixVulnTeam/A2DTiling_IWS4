@@ -46,14 +46,10 @@
       border-radius: 0.3rem;
       vertical-align: top;
     }
-    //padding: 0 0 0 0.8rem;
     padding: .5rem;
     display: inline-block;
     height: 5.6rem;
 
-    &:hover{
-      background-color: $color-white-2;
-    }
     &--icon{
       border: 2px solid $color-primary;
       width: 4.5rem;
@@ -62,9 +58,14 @@
       display: inline-block;
       font-size: 3.5rem !important;
       margin-top: .1rem;
-      color: $color-secondary;
+      color: $color-white;
+      background-color: $color-secondary;
       border-radius: 3px;
       padding-top: .2rem;
+
+      &:hover{
+        background-color: $color-primary;
+      }
     }
     &--text{
       margin-top: -.3rem;
@@ -72,7 +73,7 @@
       font-weight: 700;
       display: inline-block;
       &-number{
-        color: $color-secondary;
+        color: $color-primary;
       }
     }
   }

@@ -1,7 +1,11 @@
 .contact{
+  position: relative;
   width: 100%;
   padding: 8rem 0 8rem 0;
   background-color: #f7f7f7;
+  z-index: 95;
+  border-bottom: 2px solid #efefef;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 3px 27px -5px;
 
   &__text{
     font-size: 2.3rem;

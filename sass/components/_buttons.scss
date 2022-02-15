@@ -1,8 +1,6 @@
 .button{
   &:link,
   &:visited{
-    //display: block;
-    //position: relative;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
@@ -15,6 +13,9 @@
     width: 21rem;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     margin-right: 2rem;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
   }
 
   &__white{

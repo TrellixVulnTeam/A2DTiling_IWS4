@@ -1,19 +1,17 @@
 .header {
   font-family: 'JetBrains Mono', monospace;
   color: $color-white-2;
-  //height:90vh;
   height: 55rem;
-  //margin-top: 10rem;
   background-image: linear-gradient(to right bottom, rgba($color-white, 0.1), rgba($color-white, 0.3)), url(../img/header_test_4.jpg);
-  //background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  //background-size: contain;
   position: relative;
   width: 100% !important;
   background-size:cover;
   padding-top: 9rem;
   text-align: center;
+  z-index: 99;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   //@media(max-width: 1440px) {
   //    //height: 200rem;
   //    margin-top: 10rem !important;
@@ -26,16 +24,23 @@
   //}
 
   &__title{
+    color: $color-white;
     margin-bottom: -3rem !important;
     padding-bottom: 0 !important;
     text-transform: uppercase;
     font-size: 9rem;
     font-weight: 700;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
     &-sub{
       letter-spacing: 1rem;
       font-size: 3rem;
       font-weight: 700;
       margin-bottom: 2rem;
+      animation-name: moveInRight;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
     }
   }
 
@@ -44,6 +49,9 @@
     margin-top: 2rem !important;
     font-size: 2rem;
     padding-bottom: 3rem;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 
   }
 
