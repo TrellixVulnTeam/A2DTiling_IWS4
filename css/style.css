@@ -184,6 +184,24 @@ body {
     animation-duration: 2s;
     animation-timing-function: ease-out; }
 
+.footer {
+  width: 100%;
+  background-color: #292929;
+  padding-top: 4rem;
+  font-size: 2rem;
+  color: #d1d1d1; }
+  .footer__text {
+    display: block;
+    padding-bottom: 1rem; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    padding-bottom: 1rem; }
+  .footer__bottom {
+    border-top: 2px solid #494949;
+    text-align: center;
+    padding: 2rem; }
+
 .navigation {
   font-family: 'JetBrains Mono', monospace;
   width: 100%;
@@ -295,7 +313,7 @@ body {
     font-size: 2.3rem;
     width: 100%; }
     .about__profile--photo {
-      padding: 0 0 2rem 2rem;
+      padding: 2rem 0 2rem 2rem;
       float: right;
       width: 50%; }
 
@@ -314,9 +332,9 @@ body {
 .contact {
   position: relative;
   width: 100%;
-  padding: 8rem 0 8rem 0;
-  background-color: #f7f7f7;
-  z-index: 95;
+  padding: 8rem 0 18rem 0;
+  background-color: 1 #fdfdfd;
+  z-index: 80;
   border-bottom: 2px solid #efefef;
   box-shadow: rgba(50, 50, 93, 0.25) 0 3px 27px -5px; }
   .contact__text {
@@ -429,3 +447,48 @@ input[type=submit]:hover {
     .services__box--text {
       font-size: 2rem;
       margin-bottom: 3rem; }
+
+.review {
+  position: relative;
+  width: 100%;
+  padding: 8rem 0 8rem 0;
+  background-color: #f4f4f4;
+  z-index: 90;
+  border-bottom: 2px solid #efefef;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 3px 27px -5px; }
+  .review__box {
+    width: 100%;
+    margin-bottom: 4rem;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 2.5rem;
+    min-height: 40rem; }
+    .review__box--icon {
+      width: 7rem;
+      height: 7rem;
+      background-color: orange;
+      display: inline-block;
+      text-align: center;
+      font-size: 3rem;
+      border-radius: 50px;
+      padding-top: 1.2rem;
+      color: #fff;
+      margin-bottom: 3rem; }
+      .review__box--icon-green {
+        background-color: #01bda3; }
+      .review__box--icon-orange {
+        background-color: #f44236; }
+      .review__box--icon-grey {
+        background-color: #5e7c8a; }
+    .review__box--name {
+      padding-top: 0.2rem;
+      font-size: 2.3rem;
+      font-weight: 700;
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 2rem; }
+      .review__box--name-img {
+        height: 2rem;
+        display: block; }
+    .review__box--text {
+      font-size: 2.3rem; }

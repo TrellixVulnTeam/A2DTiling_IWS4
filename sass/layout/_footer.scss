@@ -1,3 +1,29 @@
 .footer{
+    width: 100%;
+    background-color: $color-primary;
+    padding-top: 4rem;
+    font-size: 2rem;
+    color: $color-white-2;
 
+    &__title{
+        
+    }
+    &__text{
+        display: block;
+        padding-bottom: 1rem;
+    }
+    &__list{
+        list-style: none;
+    }
+    &__item{
+        padding-bottom: 1rem;
+    }
+    &__map{
+
+    }
+    &__bottom{
+        border-top: 2px solid #494949;
+        text-align: center;
+        padding: 2rem;
+    }
 }
