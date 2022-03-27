@@ -64,11 +64,12 @@ body {
 
 .heading-secondary {
   position: relative;
-  color: #58d212;
+  color: #ed5a0c;
   font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
   font-size: 4rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-bottom: 2rem; }
   .heading-secondary:before {
     position: absolute;
     left: 0;
@@ -145,19 +146,19 @@ body {
 .header {
   font-family: 'JetBrains Mono', monospace;
   color: #d1d1d1;
-  height: 55rem;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3)), url(../img/header_test_4.jpg);
+  height: 60rem;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/54374663_2486450451425396_5256632034310225920_n.jpg);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   width: 100% !important;
   background-size: cover;
-  padding-top: 9rem;
+  padding-top: 20rem;
   text-align: center;
   z-index: 99;
-  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; }
+  box-shadow: rgba(50, 50, 93, 0.25) 0 3px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; }
   .header__title {
-    color: #fff;
+    color: #ed5a0c;
     margin-bottom: -3rem !important;
     padding-bottom: 0 !important;
     text-transform: uppercase;
@@ -173,9 +174,9 @@ body {
       margin-bottom: 2rem;
       animation-name: moveInRight;
       animation-duration: 2s;
-      animation-timing-function: ease-out; }
+      animation-timing-function: ease-out;
+      color: #292929; }
   .header__text {
-    color: #fff;
     margin-top: 2rem !important;
     font-size: 2rem;
     padding-bottom: 3rem;
@@ -189,20 +190,26 @@ body {
   z-index: 10000;
   position: fixed;
   background-image: linear-gradient(to right bottom, white, white);
-  border-bottom: 3px solid silver; }
+  box-shadow: rgba(50, 50, 93, 0.25) 0 3px 2px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; }
   .navigation__logo {
-    padding: 1rem 1rem 0.5rem 1rem;
-    height: 50px;
-    display: inline-block;
-    background-color: #292929; }
+    height: 70px;
+    display: inline-block; }
   .navigation__list {
-    padding: 1.8rem 2rem 0 5rem;
+    padding: 3rem 0 0 5rem;
     vertical-align: top;
     display: inline-block;
-    list-style: none; }
+    list-style: none;
+    width: 85%; }
   .navigation__item {
     padding-right: 2.5rem;
     display: inline-block; }
+    .navigation__item--right {
+      color: #ed5a0c;
+      float: right; }
+    .navigation__item:nth-last-child(2) {
+      padding-right: 0; }
+    .navigation__item:last-child {
+      padding-right: 5.5rem; }
   .navigation__link {
     color: #292929;
     text-decoration: none;
@@ -228,7 +235,7 @@ body {
       font-size: 3.5rem !important;
       margin-top: .1rem;
       color: #fff;
-      background-color: #58d212;
+      background-color: #ed5a0c;
       border-radius: 3px;
       padding-top: .2rem; }
       .navigation__contact--icon:hover {
@@ -247,7 +254,7 @@ body {
   font-weight: 700;
   color: #fff;
   padding: 1.2rem 1.2rem 1.2rem 1.2rem;
-  background-color: #58d212;
+  background-color: #ed5a0c;
   border: 0;
   border-radius: 3px;
   width: 21rem;
@@ -264,7 +271,7 @@ body {
 .button__border {
   color: #292929 !important;
   background-color: transparent !important;
-  border: 2px solid #58d212 !important; }
+  border: 2px solid #ed5a0c !important; }
 
 .about {
   position: relative !important;
@@ -275,7 +282,8 @@ body {
   border-bottom: 2px solid #efefef;
   box-shadow: rgba(50, 50, 93, 0.25) 0 3px 27px -5px; }
   .about__text {
-    font-size: 2.3rem; }
+    font-size: 2.3rem;
+    width: 100%; }
   .about__photo {
     position: relative;
     width: 100%;
@@ -283,6 +291,13 @@ body {
     overflow: hidden;
     object-fit: cover;
     background-position: top; }
+  .about__profile {
+    font-size: 2.3rem;
+    width: 100%; }
+    .about__profile--photo {
+      padding: 0 0 2rem 2rem;
+      float: right;
+      width: 50%; }
 
 .divider {
   background-color: orangered;
@@ -339,7 +354,7 @@ body {
       height: 100%;
       display: inline-block;
       width: 30%;
-      background-color: #58d212; }
+      background-color: #ed5a0c; }
     .contact__box--right {
       vertical-align: top;
       padding: 4rem;
@@ -360,7 +375,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: #58d212;
+  background-color: #ed5a0c;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -398,6 +413,12 @@ input[type=submit]:hover {
   .services__text {
     font-size: 2.3rem;
     padding-bottom: 3rem; }
+  .services__item {
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    width: 45%;
+    display: inline-block; }
   .services__box {
     text-align: center;
     position: relative;

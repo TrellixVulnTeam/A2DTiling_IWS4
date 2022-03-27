@@ -12,6 +12,18 @@
     padding-bottom: 3rem;
   }
 
+  &__list{
+    
+  }
+  
+  &__item{
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    width: 45%;
+    display: inline-block;
+  }
+
   &__box{
     text-align: center;
     position: relative;

@@ -1,17 +1,18 @@
 .header {
   font-family: 'JetBrains Mono', monospace;
   color: $color-white-2;
-  height: 55rem;
-  background-image: linear-gradient(to right bottom, rgba($color-white, 0.1), rgba($color-white, 0.3)), url(../img/header_test_4.jpg);
+  height: 60rem;
+  background-image: linear-gradient(to right bottom, rgba($color-white, 0.5), rgba($color-white, 0.5)), url(../img/54374663_2486450451425396_5256632034310225920_n.jpg);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   width: 100% !important;
   background-size:cover;
-  padding-top: 9rem;
+  padding-top: 20rem;
   text-align: center;
   z-index: 99;
-  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 3px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
   //@media(max-width: 1440px) {
   //    //height: 200rem;
   //    margin-top: 10rem !important;
@@ -24,7 +25,7 @@
   //}
 
   &__title{
-    color: $color-white;
+    color: $color-secondary;
     margin-bottom: -3rem !important;
     padding-bottom: 0 !important;
     text-transform: uppercase;
@@ -41,11 +42,11 @@
       animation-name: moveInRight;
       animation-duration: 2s;
       animation-timing-function: ease-out;
+      color: $color-primary;
     }
   }
 
   &__text {
-    color: $color-white;
     margin-top: 2rem !important;
     font-size: 2rem;
     padding-bottom: 3rem;
