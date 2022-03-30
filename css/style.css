@@ -234,6 +234,8 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.7rem; }
+    .navigation__link--active {
+      color: #ed5a0c !important; }
   .navigation__contact {
     padding: .5rem;
     display: inline-block;

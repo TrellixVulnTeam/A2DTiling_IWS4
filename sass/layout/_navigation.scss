@@ -50,7 +50,13 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.7rem;
+
+    &--active{
+      color: $color-secondary !important;
+    }
   }
+
+  
 
   &__contact{
     &:link,
