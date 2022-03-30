@@ -3,6 +3,10 @@
     margin: 0 auto;
     position: relative;
 
+    @media(max-width: 1230px){
+        padding: 0 2rem 0 2rem;
+    }
+
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
     }
@@ -23,6 +27,9 @@
 
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontial}) / 2);
+        @media(max-width: 950px){
+            width: 100%;
+        }
     }
 
     .col-1-of-3 {

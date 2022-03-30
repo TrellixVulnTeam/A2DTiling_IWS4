@@ -37,3 +37,15 @@
 .margin-top-hugh{
     margin-top: 12rem;
 }
+
+.small-hidden{
+    @media(max-width: 950px){
+        display: none !important;
+    }
+}
+.small-visible{
+    display: none !important;
+    @media(max-width: 950px){
+        display: block !important;
+    }
+}

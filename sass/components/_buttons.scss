@@ -10,12 +10,14 @@
     background-color: $color-secondary;
     border: 0;
     border-radius: 3px;
-    width: 21rem;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     margin-right: 2rem;
     animation-name: fadein;
     animation-duration: 2s;
     animation-timing-function: ease-out;
+    @media(max-width: 540px){
+      font-size: 1.5rem;
+    }
   }
 
   &__white{
