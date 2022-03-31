@@ -58,6 +58,15 @@ body {
   font-weight: 700;
   font-size: 5rem;
   text-transform: uppercase; }
+  @media (max-width: 1000px) {
+    .heading-primary {
+      font-size: 4rem; } }
+  @media (max-width: 800px) {
+    .heading-primary {
+      font-size: 3.5rem; } }
+  @media (max-width: 600px) {
+    .heading-primary {
+      font-size: 3rem; } }
   .heading-primary__center {
     text-align: center;
     margin-bottom: 5rem; }
@@ -70,6 +79,15 @@ body {
   font-size: 4rem;
   text-transform: uppercase;
   padding-bottom: 2rem; }
+  @media (max-width: 1000px) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 800px) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
+  @media (max-width: 600px) {
+    .heading-secondary {
+      font-size: 2rem; } }
   .heading-secondary:before {
     position: absolute;
     left: 0;
@@ -78,6 +96,12 @@ body {
     width: 50px;
     content: '';
     border-top: 4px solid #292929; }
+    @media (max-width: 1000px) {
+      .heading-secondary:before {
+        top: 4.7rem; } }
+    @media (max-width: 600px) {
+      .heading-secondary:before {
+        top: 3.7rem; } }
   .heading-secondary__center {
     text-align: center;
     margin-bottom: 5rem; }
@@ -245,17 +269,6 @@ body {
   .row .col-4-of-4 {
     width: calc(4 * ((100% - 3 * 5rem) / 4) + 3 * 5rem); }
 
-#loading {
-  display: none;
-  position: absolute;
-  z-index: 1000000;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.99);
-  background-image: url("https://i.stack.imgur.com/MnyxU.gif");
-  background-repeat: no-repeat;
-  background-position: center; }
-
 .header {
   font-family: 'JetBrains Mono', monospace;
   color: #d1d1d1;
@@ -272,16 +285,20 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0 3px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; }
   @media (max-width: 800px) {
     .header {
-      height: 50rem; } }
+      height: 50rem;
+      background-size: auto; } }
   @media (max-width: 670px) {
     .header {
-      height: 40rem; } }
+      height: 50rem;
+      background-size: auto; } }
   @media (max-width: 540px) {
     .header {
-      height: 30rem; } }
+      height: 50rem;
+      background-size: auto; } }
   @media (max-width: 400px) {
     .header {
-      height: 25rem; } }
+      height: 50rem;
+      background-size: auto; } }
   .header__title {
     color: #ed5a0c;
     margin-bottom: -3rem;
@@ -313,18 +330,19 @@ body {
           font-size: 1.5rem; } }
     @media (max-width: 800px) {
       .header__title {
-        margin-top: -6rem; } }
+        margin-top: -3rem;
+        font-size: 7rem; } }
     @media (max-width: 670px) {
       .header__title {
-        margin-top: -8rem;
-        font-size: 7rem; } }
+        margin-top: 0;
+        font-size: 5rem; } }
     @media (max-width: 540px) {
       .header__title {
-        margin-top: -10rem;
+        margin-top: -1rem;
         font-size: 5rem; } }
     @media (max-width: 400px) {
       .header__title {
-        margin-top: -13rem; } }
+        margin-top: -1rem; } }
   .header__text {
     margin-top: 2rem !important;
     font-size: 2rem;
@@ -383,19 +401,24 @@ body {
   .navigation__logo {
     max-height: 70px;
     width: 14%;
-    display: inline-block; }
+    display: inline-block;
+    padding-top: 0.8rem; }
     @media (max-width: 950px) {
       .navigation__logo {
-        height: 50px; } }
+        height: 7rem; } }
+    @media (max-width: 800px) {
+      .navigation__logo {
+        width: 12rem;
+        height: 7rem; } }
   .navigation__list {
-    padding: 3rem 0 0 5rem;
+    padding: 3.3rem 0 0 5rem;
     vertical-align: top;
     display: inline-block;
     list-style: none;
     width: 85%; }
     @media (max-width: 950px) {
       .navigation__list {
-        padding: 2rem 0 0 5rem; } }
+        padding: 2.6rem 0 0 5rem; } }
     @media (max-width: 8200px) {
       .navigation__list {
         width: 75%; } }
@@ -470,7 +493,7 @@ body {
   .navigation__mobile {
     display: none;
     position: absolute;
-    top: 8px;
+    top: 14px;
     right: 20px; }
     @media (max-width: 950px) {
       .navigation__mobile {

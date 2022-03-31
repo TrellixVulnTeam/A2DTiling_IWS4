@@ -3,31 +3,33 @@
   width: 100%;
   z-index: 10000;
   position: fixed;
-  //background-color: #303030;
-  //background-image: linear-gradient(to right bottom, rgba(#303030, 0.75), rgba(#303030, 1));
   background-image: linear-gradient(to right bottom, rgba($color-white, 1), rgba($color-white, 1));
-  // border-bottom: 3px solid silver;
   box-shadow: rgba(50, 50, 93, 0.25) 0 3px 2px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
   &__logo{
     max-height: 70px;
     width: 14%;
     display: inline-block;
+    padding-top: 0.8rem;
     @media(max-width: 950px){
-      height: 50px;
+      height: 7rem;
+    }
+    @media(max-width: 800px){
+      width: 12rem;
+      height: 7rem;
     }
   }
 
 
   &__list{
-    padding: 3rem 0 0 5rem;
+    padding: 3.3rem 0 0 5rem;
     vertical-align: top;
     display: inline-block;
     list-style: none;
     width: 85%;
     // background-color: orange;
     @media(max-width: 950px){
-      padding: 2rem 0 0 5rem;
+      padding: 2.6rem 0 0 5rem;
     }
     @media(max-width: 8200px){
       width: 75%;
@@ -133,7 +135,7 @@
   &__mobile{
     display: none;
     position: absolute;
-    top: 8px;
+    top: 14px;
     right: 20px;
     @media(max-width:950px){
       display: block;

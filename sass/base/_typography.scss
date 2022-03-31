@@ -5,6 +5,16 @@
   font-size: 5rem;
   text-transform: uppercase;
 
+  @media(max-width: 1000px){
+    font-size: 4rem;
+  }
+  @media(max-width: 800px){
+    font-size: 3.5rem;
+  }
+  @media(max-width: 600px){
+    font-size: 3rem;
+  }
+
   &__center{
     text-align: center;
     margin-bottom: 5rem;
@@ -20,6 +30,16 @@
   text-transform: uppercase;
   padding-bottom: 2rem;
 
+  @media(max-width: 1000px){
+    font-size: 3rem;
+  }
+  @media(max-width: 800px){
+    font-size: 2.5rem;
+  }
+  @media(max-width: 600px){
+    font-size: 2rem;
+  }
+
   &:before {
     position: absolute;
     left: 0;
@@ -28,6 +48,13 @@
     width: 50px;
     content: '';
     border-top: 4px solid $color-primary;
+    @media(max-width: 1000px){
+      top: 4.7rem;
+    }
+    @media(max-width: 600px){
+      top: 3.7rem;
+    }
+
   }
 
   &__center{

@@ -1,23 +1,28 @@
-if ($(window).width() < 771) {
-  document.getElementById("loading").style.display = "flex";
-  const wait = (delay = 0) =>
-  new Promise(resolve => setTimeout(resolve, delay));
+// if ($(window).width() < 771) {
+//   document.getElementById("loading").style.display = "flex";
+//   const wait = (delay = 0) =>
+//   new Promise(resolve => setTimeout(resolve, delay));
 
-  const setVisible = (elementOrSelector, visible) => 
-    (typeof elementOrSelector === 'string'
-      ? document.querySelector(elementOrSelector)
-      : elementOrSelector
-    ).style.display = visible ? 'block' : 'none';
+//   const setVisible = (elementOrSelector, visible) => 
+//     (typeof elementOrSelector === 'string'
+//       ? document.querySelector(elementOrSelector)
+//       : elementOrSelector
+//     ).style.display = visible ? 'block' : 'none';
 
-  setVisible('.page', false);
-  setVisible('#loading', true);
+//   setVisible('.page', false);
+//   setVisible('#loading', true);
 
-  document.addEventListener('DOMContentLoaded', () =>
-    wait(2000).then(() => {
-      setVisible('.page', true);
-      setVisible('#loading', false);
-  }));
-}
+//   document.addEventListener('DOMContentLoaded', () =>
+//     wait(2000).then(() => {
+//       setVisible('.page', true);
+//       setVisible('#loading', false);
+//   }));
+// }
+
+// document.querySelector(".navigation__mobile").style.display = "none";
+// setTimeout(function() {
+//   document.querySelector(".navigation__mobile").style.display = "block";
+// }, 1800);
 
 
 

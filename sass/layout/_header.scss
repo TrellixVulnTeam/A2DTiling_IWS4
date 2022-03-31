@@ -14,15 +14,19 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0 3px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   @media(max-width: 800px){
     height: 50rem;
+    background-size: auto;
   }
   @media(max-width: 670px){
-    height: 40rem;
+    height: 50rem;
+    background-size: auto;
   }
   @media(max-width: 540px){
-    height: 30rem;
+    height: 50rem;
+    background-size: auto;
   }
   @media(max-width: 400px){
-    height: 25rem;
+    height: 50rem;
+    background-size: auto;
   }
 
   //@media(max-width: 1440px) {
@@ -67,18 +71,19 @@
       }
     }
     @media(max-width: 800px){
-      margin-top: -6rem;
-    }
-    @media(max-width: 670px){
-      margin-top: -8rem;
+      margin-top: -3rem;
       font-size: 7rem;
     }
+    @media(max-width: 670px){
+      margin-top: 0;
+      font-size: 5rem;
+    }
     @media(max-width: 540px){
-      margin-top: -10rem;
+      margin-top: -1rem;
       font-size: 5rem;
     }
     @media(max-width: 400px){
-      margin-top: -13rem;
+      margin-top: -1rem;
     }
   }
 
