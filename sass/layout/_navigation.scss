@@ -128,4 +128,40 @@
       }
     }
   }
+
+
+  &__mobile{
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    @media(max-width:950px){
+      display: block;
+    }
+
+    &--box{
+      border-radius: 2px;
+      padding: 1.1rem 1.7rem 1.1rem 1.7rem;
+      background-color: $color-grey-dark-5;
+      color: $color-white;
+      display: none;
+      &:first-child{
+        margin-right: 2rem;
+      }
+      @media(max-width:770px){
+          &:first-child{
+            display: inline-block;
+          }
+      }
+      @media(max-width:700px){
+        &:first-child{
+          margin-right: 1rem;
+        }
+        &:last-child{
+          display: inline-block;
+        }
+    }
+    }
+  }
+
 }

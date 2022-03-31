@@ -11,12 +11,10 @@
     <link rel="shortcut icon" href="#">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200&family=Sora:wght@300&display=swap" rel="stylesheet">-->
-<!--    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500&family=JetBrains+Mono:wght@100;200&family=Sora:wght@300&display=swap" rel="stylesheet">-->
-<!--    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500&family=Epilogue:wght@200&family=JetBrains+Mono:wght@100;200&family=Sora:wght@300&display=swap" rel="stylesheet">-->
 </head>
 <body>
-
+<div class="page"></div>
+<div id="loading"></div>
 <nav class="navigation">
     <div class="row">
 <!--        LOGO-->
@@ -50,21 +48,14 @@
                 <a href="mailto:a2dtiling@gmail.com" class="navigation__link">a2dtiling@gmail.com</a>
             </li>
         </ul>
-        <!-- <a href="tel:02041498050" class="navigation__contact">
-            <i class="fa fa-solid fa-mobile navigation__contact--icon"></i>
-            <span class="navigation__contact--text">
-                CALL US<br>
-                <span class="navigation__contact--text-number">020 4149 8050</span>
-            </span>
-        </a>
-
-        <a href="mailto:a2dtiling@gmail.com" class="navigation__contact">
-            <i class="fa fa-solid fa-at navigation__contact--icon"></i>
-            <span class="navigation__contact--text">
-                EMAIL US<br>
-                <span class="navigation__contact--text-number">a2dtiling@gmail.com</span>
-            </span>
-        </a> -->
+        <div class="navigation__mobile">
+            <a href="tel:02041498050" class="navigation__mobile--box">
+                    <i class="fa fa-solid fa-phone"></i>                
+            </a>
+            <div class="navigation__mobile--box">
+                <i class="fa fas fa-bars"></i>
+            </div>
+        </div>
     </div>
 </nav>
 
@@ -361,59 +352,6 @@
     </div>
 </section>
 
-
-
-<!-- <section class="contact" id="contact">
-    <h1 class="heading-primary heading-primary__center">Contact Us</h1>
-    <div class="row">
-        <div class="col-1-of-1">
-            <div class="contact__box">
-                <div class="contact__box--left">
-                    <h3 class="contact__box--title-white">Lets get in touch</h3>
-                    <div class="contact__box--details">
-                        <p class="contact__box--details-text">
-                            <b>Address: </b> 50 Nautilus Place<br>
-                            Spencerville, Christchurch
-                        </p>
-                    </div>
-                    <div class="contact__box--details">
-                        <p class="contact__box--details-text">
-                            <b>Phone: </b> 02041498050
-                        </p>
-                    </div>
-                    <div class="contact__box--details">
-                        <p class="contact__box--details-text">
-                            <i class="fa fa-solid fa-mobile contact__box--details-icon"></i>
-                            <b>Email: </b> a2dtiling@gmail.com
-                        </p>
-                    </div>
-                </div>
-                <div class="contact__box--right">
-                    <h3 class="contact__box--title">Get in touch</h3>
-                    <form action="/action_page.php">
-                        <label for="fname">Full Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your full name..">
-
-                        <label for="phone">Phone</label>
-                        <input type="text" id="phone" name="phone" placeholder="Your phone number..">
-
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Your email address..">
-
-                        <label for="country">Reason for Enquiry</label>
-                        <select id="country" name="country">
-                            <option value="australia">Bathroom Tiling</option>
-                            <option value="canada">Kitchen Splashback</option>
-                            <option value="usa">Other</option>
-                        </select>
-
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 
 <section class="contact">
     <h1 class="heading-primary heading-primary__center">Contact Us</h1>

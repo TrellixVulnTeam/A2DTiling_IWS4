@@ -245,6 +245,17 @@ body {
   .row .col-4-of-4 {
     width: calc(4 * ((100% - 3 * 5rem) / 4) + 3 * 5rem); }
 
+#loading {
+  display: none;
+  position: fixed;
+  z-index: 1000000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.99);
+  background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+  background-repeat: no-repeat;
+  background-position: center; }
+
 .header {
   font-family: 'JetBrains Mono', monospace;
   color: #d1d1d1;
@@ -456,6 +467,30 @@ body {
       display: inline-block; }
       .navigation__contact--text-number {
         color: #292929; }
+  .navigation__mobile {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 20px; }
+    @media (max-width: 950px) {
+      .navigation__mobile {
+        display: block; } }
+    .navigation__mobile--box {
+      border-radius: 2px;
+      padding: 1.1rem 1.7rem 1.1rem 1.7rem;
+      background-color: #3a3a3a;
+      color: #fff;
+      display: none; }
+      .navigation__mobile--box:first-child {
+        margin-right: 2rem; }
+      @media (max-width: 770px) {
+        .navigation__mobile--box:first-child {
+          display: inline-block; } }
+      @media (max-width: 700px) {
+        .navigation__mobile--box:first-child {
+          margin-right: 1rem; }
+        .navigation__mobile--box:last-child {
+          display: inline-block; } }
 
 .button:link, .button:visited {
   text-decoration: none;
