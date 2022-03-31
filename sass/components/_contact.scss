@@ -7,67 +7,65 @@
   border-bottom: 2px solid #efefef;
   box-shadow: rgba(50, 50, 93, 0.25) 0 3px 27px -5px;
 
-  &__text{
-    font-size: 2.3rem;
-  }
-
-  &__box{
+  &__top{
     background-color: $color-white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    height: 60rem;
-    position: relative;
-
-    &--title{
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 2.5rem;
-      padding-bottom: 3rem;
-
-      &-white{
-        padding-bottom: 3rem;
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 2.5rem;
-        color: $color-white;
-      }
+    color: $color-primary;
+    display: block;
+    width: 100%;
+    padding: 2rem 4rem 5rem 4rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 2px solid #efefef;
+    height: 100%;
+    @media(max-width: 850px){
+      padding-bottom: 8rem;
+    }
+    @media(max-width: 450px){
+      padding-bottom: 11.5rem;
     }
 
-    &--details{
-      color:  $color-white;
-      display: block;
-      margin-bottom: 5rem;
-
-      &-icon{
-        display: inline-block;
-        font-size: 7rem !important;
-      }
-      &-text{
-        &:first-child{
-          margin-top: -2rem !important;
-        }
-        font-size: 2rem;
-        padding: 1.8rem;
-        vertical-align: top;
-        display: inline-block;
-      }
-    }
-
-    &--left{
-      padding: 4rem;
-      height: 100%;
+    &--icon{
       display: inline-block;
-      width: 30%;
-      background-color: $color-secondary;
+      font-weight: 700;
+      padding-right: 1rem;
     }
-    &--right{
-      vertical-align: top;
-      padding: 4rem;
-      height: 100%;
+
+    &--address{
       display: inline-block;
-      width: 69%;
-      background-color: $color-white;
-      margin-left: -4px !important;
+      color: $color-secondary;
+      
+    }
+    &--phone{
+      display: inline-block;
+      &:link,
+      &:visited{
+        color: $color-secondary;
+        text-decoration: none;
+      }
+    }
+
+    &--email{
+      display: inline-block;
+      &:link,
+      &:visited{
+        color: $color-secondary;
+        text-decoration: none;
+      }
     }
   }
 
+  &__bottom{
+    border-radius: 4px;
+    padding: 2rem;
+    background-color: $color-white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 3px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+}
+
+label{
+  display: block;
+  clear: both;
 }
 
 input[type=text], select {
@@ -82,7 +80,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: $color-secondary;
+  background-color: $color-primary;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -92,5 +90,106 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: $color-primary;
+  background-color: $color-secondary;
 }
+
+
+
+
+
+// .contact{
+//   position: relative;
+//   width: 100%;
+//   padding: 8rem 0 18rem 0;
+//   background-color:1 #fdfdfd;
+//   z-index: 80;
+//   border-bottom: 2px solid #efefef;
+//   box-shadow: rgba(50, 50, 93, 0.25) 0 3px 27px -5px;
+
+//   &__text{
+//     font-size: 2.3rem;
+//   }
+
+//   &__box{
+//     background-color: $color-white;
+//     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+//     height: 60rem;
+//     position: relative;
+
+//     &--title{
+//       font-family: 'JetBrains Mono', monospace;
+//       font-size: 2.5rem;
+//       padding-bottom: 3rem;
+
+//       &-white{
+//         padding-bottom: 3rem;
+//         font-family: 'JetBrains Mono', monospace;
+//         font-size: 2.5rem;
+//         color: $color-white;
+//       }
+//     }
+
+//     &--details{
+//       color:  $color-white;
+//       display: block;
+//       margin-bottom: 5rem;
+
+//       &-icon{
+//         display: inline-block;
+//         font-size: 7rem !important;
+//       }
+//       &-text{
+//         &:first-child{
+//           margin-top: -2rem !important;
+//         }
+//         font-size: 2rem;
+//         padding: 1.8rem;
+//         vertical-align: top;
+//         display: inline-block;
+//       }
+//     }
+
+//     &--left{
+//       padding: 4rem;
+//       height: 100%;
+//       display: inline-block;
+//       width: 30%;
+//       background-color: $color-secondary;
+//     }
+//     &--right{
+//       vertical-align: top;
+//       padding: 4rem;
+//       height: 100%;
+//       display: inline-block;
+//       width: 69%;
+//       background-color: $color-white;
+//       margin-left: -4px !important;
+//     }
+//   }
+
+// }
+
+// input[type=text], select {
+//   width: 100%;
+//   padding: 12px 20px;
+//   margin: 8px 0;
+//   display: inline-block;
+//   border: 1px solid #ccc;
+//   border-radius: 4px;
+//   box-sizing: border-box;
+// }
+
+// input[type=submit] {
+//   width: 100%;
+//   background-color: $color-secondary;
+//   color: white;
+//   padding: 14px 20px;
+//   margin: 8px 0;
+//   border: none;
+//   border-radius: 4px;
+//   cursor: pointer;
+// }
+
+// input[type=submit]:hover {
+//   background-color: $color-primary;
+// }
